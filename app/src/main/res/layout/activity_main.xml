@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gpc_background"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="214dp"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chat_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="24dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/button"
+            android:alpha="0.8"
+            android:drawableStart="@drawable/ic_chat"
+            android:drawablePadding="16dp"
+            android:paddingStart="22dp"
+            android:text="@string/chat_button"
+            android:textSize="@dimen/text_size"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/button"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorAccent"
+            android:drawableStart="@drawable/ic_lock"
+            android:alpha="0.8"
+            android:drawablePadding="16dp"
+            android:paddingStart="22dp"
+            android:text="@string/login_button"
+            android:textSize="@dimen/text_size"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/animation_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorAccent"
+            android:drawableStart="@drawable/ic_animation"
+            android:drawablePadding="16dp"
+            android:paddingStart="22dp"
+            android:background="@drawable/button"
+            android:alpha="0.8"
+            android:text="@string/animation_button"
+            android:layout_marginBottom="24dp"
+            android:textSize="@dimen/text_size"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+</RelativeLayout>

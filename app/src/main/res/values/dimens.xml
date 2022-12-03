@@ -1,0 +1,35 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- view group or layout margin -->
+    <dimen name="layout_start_margin">7dp</dimen>
+    <dimen name="layout_end_margin">21dp</dimen>
+
+    <!-- widgets or view paddings -->
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+
+    <!-- view or widgets margins -->
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_26dp">26dp</dimen>
+    <dimen name="_25dp">25dp</dimen>
+    <dimen name="_23dp">23dp</dimen>
+    <dimen name="_22dp">22dp</dimen>
+
+
+    <!-- Text Sizes -->
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="username_text_size">13sp</dimen>
+    <dimen name="chat_text_size">15sp</dimen>
+    <dimen name="status_size">18sp</dimen>
+    <dimen name="input_field_text_size">16sp</dimen>
+    <dimen name="button_height">55dp</dimen>
+    <dimen name="_14dp">14sp</dimen>
+
+
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:background="@color/background"
+    tools:ignore="UseCompoundDrawables"
+    android:layout_marginEnd="@dimen/layout_end_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginStart="@dimen/activity_vertical_margin"
+    android:focusable="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/avatarImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_avatar_placeholder"
+                    tools:ignore="MissingConstraints,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/avatarUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="@dimen/_4dp"
+                    style="@style/usernameStyle"
+                    app:layout_constraintStart_toEndOf="@+id/avatarImageView"
+                    tools:ignore="MissingConstraints,RtlSymmetry"
+                    tools:text="Lorem ipsum" />
+                <TextView
+                    android:id="@+id/messageTextView"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    style="@style/chatStyle"
+                    android:background="@drawable/bubble"
+                    android:padding="@dimen/_8dp"
+                    android:textColor="@color/chat_text"
+                    android:layout_marginStart="7dp"
+                    app:layout_constraintStart_toEndOf="@+id/avatarImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/avatarUsername"
+                    tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra, sapien at luctus semper, justo dui accumsan lorem, nec pretium dui eros pharetra leo. nec pretium dui eros pharetra leo.nec pretium dui eros pharetra leo.nec pretium dui eros pharetra leo.nec pretium dui eros pharetra leo.nec pretium dui eros pharetra leo.nec pretium dui eros pharetra leo." />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

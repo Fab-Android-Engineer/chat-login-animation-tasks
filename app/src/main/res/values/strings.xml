@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Fab Rapptr Assessment</string>
+    <string name="title_activity_animation">AnimationActivity</string>
+
+    <!-- Main Screen Strings -->
+    <string name="activity_main_title">Coding Tasks</string>
+    <string name="chat_button">CHAT</string>
+    <string name="login_button">LOG IN</string>
+    <string name="animation_button">ANIMATION</string>
+    <string name="fade_in">FADE IN</string>
+    <string name="ok_button">Ok</string>
+
+    <!-- toolbar status -->
+    <string name="chat_status">status</string>
+    <string name="login_status">Login</string>
+    <string name="animation_status">Animation</string>
+    <string name="email_hint"><font size="16">Email</font></string>
+    <string name="password_hint"><font size="16">Password</font></string>
+
+</resources>

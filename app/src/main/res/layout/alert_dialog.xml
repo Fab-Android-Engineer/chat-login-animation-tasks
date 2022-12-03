@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bubble"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_22dp">
+
+    <TextView
+        android:id="@+id/code_api"
+        style="@style/alertDialogStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:text="Code :"
+        app:layout_constraintEnd_toStartOf="@+id/code_from_api"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/code_from_api"
+        style="@style/apiResponseStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:paddingTop="5dp"
+        android:layout_marginStart="50dp"
+        android:text="end point code"
+        app:layout_constraintStart_toEndOf="@+id/code_api"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/message_api"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4dp"
+        style="@style/alertDialogStyle"
+        android:text="Message :"
+        app:layout_constraintTop_toBottomOf="@id/code_api"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/message_from_api"
+        style="@style/apiResponseStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:layout_marginStart="19dp"
+        android:paddingTop="5dp"
+        android:text="end point message"
+        app:layout_constraintTop_toBottomOf="@+id/code_from_api"
+        app:layout_constraintStart_toEndOf="@+id/message_api"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <TextView
+        android:id="@+id/time_api"
+        style="@style/alertDialogStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time in ms:"
+        app:layout_constraintTop_toBottomOf="@id/message_api"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/time_from_api"
+        style="@style/apiResponseStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="end point api time"
+        android:layout_marginStart="102dp"
+        android:paddingTop="6dp"
+        app:layout_constraintStart_toStartOf="@+id/time_api"
+        app:layout_constraintTop_toBottomOf="@id/message_from_api"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="52dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ok"
+        style="@style/buttonStyle"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ok_button"
+        android:layout_marginTop="@dimen/_8dp"
+        app:layout_constraintTop_toBottomOf="@+id/time_from_api"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/ok_button"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="282dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
